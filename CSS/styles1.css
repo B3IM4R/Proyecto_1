@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 90%;
+    color: #666;
+    background-color: #f8f8f8;
+}
+
+li {
+    list-style-image: url('../Images/icono.png');
+    line-height: 1.6em;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+th,
+td {
+    padding: 5px 30px 5px 10px;
+    border-spacing: 0px;
+    font-size: 90%;
+    margin: 0px;
+    text-align: left;
+    background-color: #e8eff5;
+    border-color: #547ca0;
+    border-top: 1px solid #547ca0;
+    border-bottom: 1px solid #547ca0;
+    border-right: 1px solid #547ca0;
+    border-left: 1px solid #547ca0;
+}
+
+tr.head th {
+    color: #fff;
+    background-color: #F46166;
+    border-bottom: 1px solid #547ca0;
+    border-right: 1px solid #749abe;
+    border-top: 1px solid #90b4d6;
+    text-align: center;
+    text-shadow: -1px -1px 1px #666666;
+    letter-spacing: 0.15em;
+}
+
+td {
+    text-shadow: 1px 1px 1px #ffffff;
+    border-color: #547ca0;
+}
+
+tr.even td,
+tr.even th {
+    background-color: #e8eff5;
+    border-color: #547ca0;
+}
+
+fieldset {
+    width: 310px;
+    margin-top: 20px;
+    border: 3px solid #F5EF45;
+    border-radius: 10px;
+    background-color: #ffffff;
+    line-height: 1.6em;
+}
+
+legend {
+    font-style: italic;
+    font-weight: bold;
+    color: gray;
+    border-radius: 20px;
+}
+
+input {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+input[type='text'] {
+    width: 120px;
+    border: 2px solid #F46166;
+    padding: 2px;
+    background: none;
+    outline: none;
+    color: grey;
+}
+
+input[type='text']:hover {
+    background-color: #d0e2f0;
+}
+
+input[type='submit'] {
+    border-style: none;
+    background-color: #F46166;
+    color: #ffffff;
+    width: 30%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+input[type='submit']:hover {
+    background-color: #749abe;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+label {
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: rgb(155, 155, 155);
+    background-image: none;
+    flex: 1;
+    padding: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 9em;
+    height: 3em;
+    line-height: 3;
+    background: rgb(155, 155, 155);
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #F46166;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: white;
+}
+
+.title {
+    float: left;
+    width: 160px;
+    clear: left;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.submit {
+    width: 310px;
+    text-align: right;
+}
